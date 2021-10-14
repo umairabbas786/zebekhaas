@@ -217,3 +217,4 @@ if(empty($_SESSION['mycart'])){
 		<!--/ End Header Inner -->
 	</header>
 	<!--/ End Header -->
+	<!--end navbar-->
