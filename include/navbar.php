@@ -194,7 +194,7 @@ if(empty($_SESSION['mycart'])){
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
 												<li <?php if($_SERVER['REQUEST_URI'] == "/index.php"){echo "class='active'";}?>><a href="index.php"><i class="fas fa-home" style="font-size:16px"></i> Home</a></li>
-												<li <?php if($_SERVER['REQUEST_URI'] == "/product.php"){echo "class='active'";}?>><a href="product.php"><i class="fas fa-box-open" style="font-size:16px"></i> Products<span class="new">New</span></a></li>											
+												<li <?php if($_SERVER['REQUEST_URI'] == "/product_list.php"){echo "class='active'";}?>><a href="product_list.php"><i class="fas fa-box-open" style="font-size:16px"></i> Products<span class="new">New</span></a></li>											
 												<li <?php if($_SERVER['REQUEST_URI'] == "/aboutus.php"){echo "class='active'";}?>><a href="aboutus.php"><i class="fas fa-info-circle" style="font-size:16px"></i> About Us</a></li>								
 												<li <?php if($_SERVER['REQUEST_URI'] == "/contact.php"){echo "class='active'";}?>><a href="contact.php"><i class="fas fa-user-circle" style="font-size:16px"></i> Contact Us</a></li>
 												<?php if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == 1 ){?>
