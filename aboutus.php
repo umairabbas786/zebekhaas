@@ -9,7 +9,7 @@
 					<div class="bread-inner">
 						<ul class="bread-list">
 							<li><a href="index.php">Home<i class="ti-arrow-right"></i></a></li>
-							<li class="active"><a href="blog-single.html">About Us</a></li>
+							<li class="active"><a href="aboutus.php">About Us</a></li>
 						</ul>
 					</div>
 				</div>

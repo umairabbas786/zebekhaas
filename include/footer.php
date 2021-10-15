@@ -82,7 +82,7 @@ if(isset($_POST['news'])){
 								<li><a href="#" style="color:#C9C9C9">Money-back</a></li>
 								<li><a href="#" style="color:#C9C9C9">Returns</a></li>
 								<li><a href="#" style="color:#C9C9C9">Shipping</a></li>
-								<li><a href="#" style="color:#C9C9C9">Privacy Policy</a></li>
+								<li><a href="privacy-policy.php" style="color:#C9C9C9">Privacy Policy</a></li>
 							</ul>
 						</div>
 						<!-- End Single Widget -->

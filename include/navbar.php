@@ -73,7 +73,7 @@ if(empty($_SESSION['mycart'])){
 							<div class="search-bar">
 								<select>
 									<option selected="selected">All Category</option>
-									<?php
+									<!-- <?php
 												$sql="select * from category";
 												$result=$conn->query($sql);
 												while($row=mysqli_fetch_assoc($result))
@@ -81,7 +81,7 @@ if(empty($_SESSION['mycart'])){
 													$name=$row['category_name'];
 												?>
 									<option value="<?php echo $name;?>"><?php echo $name;?></option>
-									<?php }?>
+									<?php }?> -->
 								</select>
 								<form>
 									<input name="search" placeholder="Search Products Here....." type="search">
