@@ -19,7 +19,7 @@ if(empty($_SESSION['mycart'])){
 							<!-- Top Left -->
 						<!--	<div class="top-left">-->
 						<!--		<ul class="list-main">-->
-						<!--			<li><a href="tel:+923017971212"><i class="ti-headphone-alt"></i> +92 301 7971212</a></li>-->
+						<!--			<li><a href="tel:+923342621414"><i class="ti-headphone-alt"></i> +92 334 2621414</a></li>-->
 						<!--			<li><a href="mailto:support@zebekhaas.com"><i class="ti-email"></i> support@zebekhaas.com</a></li>-->
 						<!--		</ul>-->
 						<!--	</div>-->

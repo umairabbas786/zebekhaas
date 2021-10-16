@@ -145,7 +145,7 @@ if(empty($_SESSION['mycart'])){
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-rocket"></i>
-						<h4>Free shiping</h4>
+						<h4>Free Shipping</h4>
 						<?php 
 						$sql="select price from shipping_charges";
 						$result=$conn->query($sql);
@@ -161,7 +161,7 @@ if(empty($_SESSION['mycart'])){
 					<div class="single-service">
 						<i class="ti-reload"></i>
 						<h4>Free Return</h4>
-						<p>Within 30 days returns</p>
+						<p>Within 15 days returns</p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -169,7 +169,7 @@ if(empty($_SESSION['mycart'])){
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-lock"></i>
-						<h4>Sucure Payment</h4>
+						<h4>Secure Payment</h4>
 						<p>100% secure payment</p>
 					</div>
 					<!-- End Single Service -->
@@ -178,7 +178,7 @@ if(empty($_SESSION['mycart'])){
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-tag"></i>
-						<h4>Best Peice</h4>
+						<h4>Best Price</h4>
 						<p>Guaranteed price</p>
 					</div>
 					<!-- End Single Service -->

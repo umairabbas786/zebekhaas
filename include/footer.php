@@ -55,7 +55,7 @@ if(isset($_POST['news'])){
 								<center><a href="index.html"><img src="public/images/zeb-e-khass-png1.png" alt="#"></a></center>
 							</div>
 							<p class="text" style="color:#C9C9C9">Zeb e Khaas's differences are what make it unique, and it matters to the brand that people can share every brilliant aspect of themselves with the world, comfortably and with confidence. Zeb e Khaas was founded on a belief that the clothes you choose should let you wear your individuality. </p>
-							<p class="call" style="color:#C9C9C9">Got Question? Call us 24/7<span><a href="tel:+923017971212"> +92 301 7971212</a></span></p>
+							<p class="call" style="color:#C9C9C9">Got Question? Call us 24/7<span><a href="tel:+923342621414"> +92 334 2621414</a></span></p>
 						</div>
 						<!-- End Single Widget -->
 					</div>
@@ -65,7 +65,6 @@ if(isset($_POST['news'])){
 							<h4>Information</h4>
 							<ul style="color:#C9C9C9">
 								<li><a style="color:#C9C9C9" href="aboutus.php">About Us</a></li>
-								<li><a style="color:#C9C9C9" href="#">Faq</a></li>
 								<li><a style="color:#C9C9C9" href="#">Terms & Conditions</a></li>
 								<li><a style="color:#C9C9C9" href="contact.php">Contact Us</a></li>
 								<li><a style="color:#C9C9C9" href="mailto:support@zebekhaas.com">Help</a></li>
@@ -80,8 +79,6 @@ if(isset($_POST['news'])){
 							<ul style="color:#C9C9C9">
 								<li><a href="#" style="color:#C9C9C9">Payment Methods</a></li>
 								<li><a href="#" style="color:#C9C9C9">Money-back</a></li>
-								<li><a href="#" style="color:#C9C9C9">Returns</a></li>
-								<li><a href="#" style="color:#C9C9C9">Shipping</a></li>
 								<li><a href="privacy-policy.php" style="color:#C9C9C9">Privacy Policy</a></li>
 							</ul>
 						</div>
@@ -95,7 +92,7 @@ if(isset($_POST['news'])){
 							<div class="contact">
 								<ul style="color:#C9C9C9">
 									<li style="color:#C9C9C9"><a href="mailto:support@zebekhaas.com"><i class="fas fa-envelope"></i> Support@zebekhaas.com</a></li>
-									<li style="color:#C9C9C9"><a href="tel:+923017971212"><i class="fas fa-phone-alt"></i> +92 301 7971212</a></li>
+									<li style="color:#C9C9C9"><a href="tel:+923342621414"><i class="fas fa-phone-alt"></i> +92 334 2621414</a></li>
 								</ul>
 							</div>
 							<!-- End Single Widget -->

@@ -107,7 +107,7 @@ else{
 									<i class="fa fa-phone"></i>
 									<h4 class="title">Call us Now:</h4>
 									<ul>
-										<li><a href="tel:+923017971212">+92 301 7971212</a></li>
+										<li><a href="tel:+923342621414">+92 334 2621414</a></li>
 									</ul>
 								</div>
 								<div class="single-info">
