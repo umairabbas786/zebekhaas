@@ -9,7 +9,8 @@
 					<div class="home-slider-4">
 						<div class="big-content" style="background-image: url('public/images/home/img8.jpeg');">
 							<div class="inner">
-								<h4 class="title"><span>Always dress <br> like it's <br> the Best day <br> of your life.</span></h4>
+								<h3 class="title"><span style="color:#333333">Always dress <br> like it's <br> the Best day <br> of your life.</span></h3>
+								<br><br>
 								<div class="button">
 									<a href="product.php" class="btn">Shop Now</a>
 								</div>
@@ -17,7 +18,8 @@
 						</div>
 						<div class="big-content" style="background-image: url('public/images/home/img9.jpeg');">
 							<div class="inner">
-								<h4 class="title"><span>Life is <br> too short <br> to wear <br> boring Dresses.</span></h4>
+								<h3 class="title"><span style="color:#333333">Life is <br> too short <br> to wear <br> boring Dresses.</span></h3>
+								<br><br>
 								<div class="button">
 									<a href="product.php" class="btn">Shop Now</a>
 								</div>
@@ -25,7 +27,8 @@
 						</div>
 						<div class="big-content" style="background-image: url('public/images/home/img3.jpeg');">
 							<div class="inner">
-								<h4 class="title"><span>You can gain <br> anything you want in <br> life, if you <br> dress for it.</span></h4>
+								<h3 class="title"><span style="color:#333333">You can gain <br> anything you want in <br> life, if you <br> dress for it.</span></h3>
+								<br><br>
 								<div class="button">
 									<a href="product.php" class="btn">Shop Now</a>
 								</div>
