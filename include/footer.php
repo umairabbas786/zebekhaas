@@ -65,7 +65,7 @@ if(isset($_POST['news'])){
 							<h4>Information</h4>
 							<ul style="color:#C9C9C9">
 								<li><a style="color:#C9C9C9" href="aboutus.php">About Us</a></li>
-								<li><a style="color:#C9C9C9" href="#">Terms & Conditions</a></li>
+								<li><a style="color:#C9C9C9" href="terms-and-conditions.php">Terms & Conditions</a></li>
 								<li><a style="color:#C9C9C9" href="contact.php">Contact Us</a></li>
 								<li><a style="color:#C9C9C9" href="mailto:support@zebekhaas.com">Help</a></li>
 							</ul>
@@ -78,7 +78,6 @@ if(isset($_POST['news'])){
 							<h4>Customer Service</h4>
 							<ul style="color:#C9C9C9">
 								<li><a href="#" style="color:#C9C9C9">Payment Methods</a></li>
-								<li><a href="#" style="color:#C9C9C9">Money-back</a></li>
 								<li><a href="privacy-policy.php" style="color:#C9C9C9">Privacy Policy</a></li>
 							</ul>
 						</div>
