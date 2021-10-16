@@ -100,7 +100,7 @@ if(isset($_POST['news'])){
 							</div>
 							<!-- End Single Widget -->
 							<ul>
-								<li><a href="#" target="_blank"><i class="ti-facebook" style="color:#1197F5"></i></a></li>
+								<li><a href="https://www.facebook.com/pg/zebekhaas.brand/about/" target="_blank"><i class="ti-facebook" style="color:#1197F5"></i></a></li>
 								<li><a href="https://www.instagram.com/invites/contact/?i=177n45r3bjj1n&utm_content=htccbdm" target="_blank"><i class="ti-instagram" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);"></i></a></li>
 							</ul>
 						</div>

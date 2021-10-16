@@ -37,44 +37,39 @@
 		</div>
 	</section>
 	<!--/ End Hero Area 2 -->
-	<br>
-	<!-- Start Small Banner  -->
-	<section class="small-banner section">
+	<br><br>
+	<!-- Start Midium Banner  -->
+	<section class="midium-banner">
 		<div class="container">
-		<div class="row">
-				<div class="col-12">
-					<div class="section-title">
-						<h2>Overview</h2>
-					</div>
-				</div>
-            </div>
 			<div class="row">
 				<!-- Single Banner  -->
-				<div class="col-lg-4 col-md-6 col-12">
+				<div class="col-lg-6 col-md-6 col-12">
 					<div class="single-banner main-img">
-						<a href="product.php" style=""><img src="public/images/home/img4.jpeg" alt="#"></a>
+						<img src="public/images/home/img1.jpeg" alt="#">
+						<div class="content">
+						<h4 style="color:#F6931D">New Arrivals</h4>
+							<a href="product.php">Shop Now</a>
+						</div>
 					</div>
 				</div>
 				<!-- /End Single Banner  -->
 				<!-- Single Banner  -->
-				<div class="col-lg-4 col-md-6 col-12">
+				<div class="col-lg-6 col-md-6 col-12">
 					<div class="single-banner main-img">
-					<a href="product.php"><img src="public/images/home/img5.jpeg" alt="#"></a>
-					</div>
-				</div>
-				<!-- /End Single Banner  -->
-				<!-- Single Banner  -->
-				<div class="col-lg-4 col-12">
-					<div class="single-banner main-img">
-					<a href="product.php"><img src="public/images/home/img6.jpeg" alt="#"></a>
+						<img src="public/images/home/img7.jpeg" alt="#">
+						<div class="content">
+							<h4 style="color:#F6931D">Winters Collection</h4>
+							<a href="product.php" class="btn">Shop Now</a>
+						</div>
 					</div>
 				</div>
 				<!-- /End Single Banner  -->
 			</div>
 		</div>
 	</section>
-	<!-- End Small Banner -->
-	<br><br>
+	<!-- End Midium Banner -->
+
+	<br><br><br>
 	<!-- Start Product Area -->
     <div class="product-area most-popular related-product section">
         <div class="container">
@@ -175,38 +170,190 @@ while ($row = mysqli_fetch_assoc($show)) {
             </div>
     </div>
 	<!-- End Product Area -->
-	<!-- Start Midium Banner  -->
-	<section class="midium-banner">
+	<br><br><br>
+	<!-- Start Shop Home List  -->
+	<section class="shop-home-list section">
 		<div class="container">
 			<div class="row">
-				<!-- Single Banner  -->
-				<div class="col-lg-6 col-md-6 col-12">
-					<div class="single-banner main-img">
-						<img src="public/images/home/img1.jpeg" alt="#">
-						<div class="content">
-						<h4 style="color:#F6931D">New Arrivals</h4>
-							<a href="product.php">Shop Now</a>
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="row">
+						<div class="col-12">
+							<div class="shop-section-title">
+								<h1>On sale</h1>
+							</div>
 						</div>
 					</div>
-				</div>
-				<!-- /End Single Banner  -->
-				<!-- Single Banner  -->
-				<div class="col-lg-6 col-md-6 col-12">
-					<div class="single-banner main-img">
-						<img src="public/images/home/img7.jpeg" alt="#">
-						<div class="content">
-							<h4 style="color:#F6931D">Winters Collection</h4>
-							<a href="product.php" class="btn">Shop Now</a>
+					<?php 
+$sql="select * from product where discount != 0 limit 3;";
+$show=$conn->query($sql);
+while ($row = mysqli_fetch_assoc($show)) {
+	$pid=$row['product_id'];
+    $name=$row['name'];
+    $price=$row['price'];
+	$pdiscount=$row['discount'];
+	$discount=$row['discount'];
+	$discount=($discount*$price)/100;
+	$discount=$price-$discount;
+    $mainimg=$row['mainphoto'];
+?>
+					<!-- Start Single List  -->
+					<div class="single-list">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="list-image overlay">
+								<?php echo "<img src='public/product/".$mainimg."' alt='#' >"?>
+									<a href="product_detail.php?pid=<?php echo $pid;?>" class="buy"><i class="fa fa-shopping-bag"></i></a>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12 no-padding">
+								<div class="content">
+									<h4 class="title"><a href="product_detail.php?pid=<?php echo $pid;?>"><?php echo $name;?></a></h4>
+									<p class="price with-discount"><?php echo round($discount);?> PKR</p>
+								</div>
+							</div>
 						</div>
 					</div>
+					<!-- End Single List  -->
+					<?php } ?>
 				</div>
-				<!-- /End Single Banner  -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="row">
+						<div class="col-12">
+							<div class="shop-section-title">
+								<h1>Best Seller</h1>
+							</div>
+						</div>
+					</div>
+					<?php 
+$sql="select * from product where discount = 0 ORDER BY RAND() limit 3;";
+$show=$conn->query($sql);
+while ($row = mysqli_fetch_assoc($show)) {
+	$pid=$row['product_id'];
+    $name=$row['name'];
+    $price=$row['price'];
+	$pdiscount=$row['discount'];
+	$discount=$row['discount'];
+	$discount=($discount*$price)/100;
+	$discount=$price-$discount;
+    $mainimg=$row['mainphoto'];
+?>
+					<!-- Start Single List  -->
+					<div class="single-list">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="list-image overlay">
+								<?php echo "<img src='public/product/".$mainimg."' alt='#' >"?>
+									<a href="product_detail.php?pid=<?php echo $pid;?>" class="buy"><i class="fa fa-shopping-bag"></i></a>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12 no-padding">
+								<div class="content">
+									<h5 class="title"><a href="product_detail.php?pid=<?php echo $pid;?>"><?php echo $name;?></a></h5>
+									<p class="price with-discount"><?php echo $price;?> PKR</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Single List  -->
+					<?php }?>
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="row">
+						<div class="col-12">
+							<div class="shop-section-title">
+								<h1>Top viewed</h1>
+							</div>
+						</div>
+					</div>
+					<?php 
+$sql="select * from product ORDER BY RAND() limit 3;";
+$show=$conn->query($sql);
+while ($row = mysqli_fetch_assoc($show)) {
+	$pid=$row['product_id'];
+    $name=$row['name'];
+    $price=$row['price'];
+	$pdiscount=$row['discount'];
+	$discount=$row['discount'];
+	$discount=($discount*$price)/100;
+	$discount=$price-$discount;
+    $mainimg=$row['mainphoto'];
+?>
+					<!-- Start Single List  -->
+					<div class="single-list">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="list-image overlay">
+								<?php echo "<img src='public/product/".$mainimg."' alt='#' >"?>
+									<a href="product_detail.php?pid=<?php echo $pid;?>" class="buy"><i class="fa fa-shopping-bag"></i></a>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12 no-padding">
+								<div class="content">
+									<h5 class="title"><a href="product_detail.php?pid=<?php echo $pid;?>"><?php echo $name;?></a></h5>
+									<p class="price with-discount"><?php echo round($discount);?> PKR</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Single List  -->
+					<?php }?>
+				</div>
 			</div>
 		</div>
 	</section>
-	<!-- End Midium Banner -->
-
+	<!-- End Shop Home List  -->
 	<br>
+
+	<!-- Start Shop Services Area  -->
+	<section class="shop-services section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-rocket"></i>
+						<h4>Free shiping</h4>
+						<?php 
+						$sql="select price from shipping_charges";
+						$result=$conn->query($sql);
+						$row=mysqli_fetch_assoc($result);
+						$price=$row['price'];
+						?>
+						<p>Orders over <?php echo $price;?> PKR</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-reload"></i>
+						<h4>Free Return</h4>
+						<p>Within 30 days returns</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-lock"></i>
+						<h4>Sucure Payment</h4>
+						<p>100% secure payment</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-tag"></i>
+						<h4>Best Peice</h4>
+						<p>Guaranteed price</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Shop Newsletter -->
 
     <?php include "include/footer.php";?>
 
