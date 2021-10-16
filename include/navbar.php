@@ -14,16 +14,17 @@ if(empty($_SESSION['mycart'])){
 			<div class="container">
 				<div class="inner-content">
 					<div class="row">
-						<div class="col-lg-6 col-md-12 col-12">
+					    <div class="col-lg-6 col-md-12 col-12"></div>
+						<!--<div class="col-lg-6 col-md-12 col-12">-->
 							<!-- Top Left -->
-							<div class="top-left">
-								<ul class="list-main">
-									<li><a href="tel:+923017971212"><i class="ti-headphone-alt"></i> +92 301 7971212</a></li>
-									<li><a href="mailto:support@zebekhaas.com"><i class="ti-email"></i> support@zebekhaas.com</a></li>
-								</ul>
-							</div>
+						<!--	<div class="top-left">-->
+						<!--		<ul class="list-main">-->
+						<!--			<li><a href="tel:+923017971212"><i class="ti-headphone-alt"></i> +92 301 7971212</a></li>-->
+						<!--			<li><a href="mailto:support@zebekhaas.com"><i class="ti-email"></i> support@zebekhaas.com</a></li>-->
+						<!--		</ul>-->
+						<!--	</div>-->
 							<!--/ End Top Left -->
-						</div>
+						<!--</div>-->
 						<div class="col-lg-6 col-md-12 col-12">
 							<!-- Top Right -->
 							<div class="right-content">
@@ -50,11 +51,11 @@ if(empty($_SESSION['mycart'])){
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
 						<div class="logo">
-							<a href="index.php"><img src="public/images/zeb-e-khass-png1.png" alt="logo"></a>
+							<a href="index.php"><img src="public/images/zeb-e-khass.jpg" alt="logo"></a>
 						</div>
 						<!--/ End Logo -->
 						<!-- Search Form -->
-						<div class="search-top mt-4">
+						<div class="search-top" style="top:93%">
 							<div class="top-search"><a href="#"><i class="ti-search"></i></a></div>
 							<!-- Search Form -->
 							<div class="search-top">
@@ -66,9 +67,9 @@ if(empty($_SESSION['mycart'])){
 							<!--/ End Search Form -->
 						</div>
 						<!--/ End Search Form -->
-						<div class="mobile-nav mt-4"></div>
+						<div class="mobile-nav"></div>
 					</div>
-					<div class="col-lg-8 col-md-7 col-12 mt-4">
+					<div class="col-lg-8 col-md-7 col-12">
 						<div class="search-bar-top">
 							<div class="search-bar">
 								<select>
@@ -90,7 +91,7 @@ if(empty($_SESSION['mycart'])){
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2 col-md-3 col-12 mt-4">
+					<div class="col-lg-2 col-md-3 col-12">
 						<div class="right-bar">
 							<!-- Search Form -->
 							<div class="sinlge-bar">
@@ -189,7 +190,7 @@ if(empty($_SESSION['mycart'])){
 						<div class="col-12">
 							<div class="menu-area">
 								<!-- Main Menu -->
-								<nav class="navbar navbar-expand-lg mt-3">
+								<nav class="navbar navbar-expand-lg">
 									<div class="navbar-collapse">	
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
