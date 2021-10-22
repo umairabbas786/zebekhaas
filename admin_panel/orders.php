@@ -17,6 +17,39 @@ if(isset($_SESSION['user'])){
    }
 }
 ?>
+<?php 
+if(isset($_GET['completestatus'])){
+    $sid = $_GET['completestatus'];
+    $sql="update orders set status = 1 where id = '$sid'";
+    $result=$conn->query($sql);
+    if($result){
+        $_SESSION['msg']="Order Completed";
+        header("location:orders.php");
+        die();
+    }
+    else{
+        $conn->error;
+    }
+}
+
+?>
+
+<?php 
+if(isset($_GET['canclestatus'])){
+    $sid = $_GET['canclestatus'];
+    $sql="update orders set status = 2 where id = '$sid'";
+    $result=$conn->query($sql);
+    if($result){
+        $_SESSION['msgs']="Order canceled";
+        header("location:orders.php");
+        die();
+    }
+    else{
+        $conn->error;
+    }
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -185,6 +218,16 @@ if(isset($_SESSION['user'])){
 <!-- Begin Page Content -->
 <div class="container-fluid">
 <br>
+<?php if(isset($_SESSION['msg'])){?>
+			<div class="alert alert-success" role="alert">
+			<?php echo $_SESSION['msg'];?>
+			</div>
+		<?php }unset($_SESSION['msg']);?>
+        <?php if(isset($_SESSION['msgs'])){?>
+			<div class="alert alert-danger" role="alert">
+			<?php echo $_SESSION['msgs'];?>
+			</div>
+		<?php }unset($_SESSION['msgs']);?>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
@@ -266,7 +309,10 @@ while ($row = mysqli_fetch_assoc($show)) {
 											<?php }else if($status == 2){?>
 												<td><span class="badge badge-danger" style="font-size:22px;">Cancelled</span></td>
 											<?php }?>
-                            <td><a href="#" name=""><button class="btn btn-block btn-danger mb-2">Status</button></a></td>
+                            <td>
+                                <a href="orders.php?completestatus=<?php echo $id;?>" name="" <?php if($status == 1 || $status == 2){echo "style='pointer-events:none'";}?>><button class="btn btn-block btn-success mb-2">Complete</button></a>
+                                <a href="orders.php?canclestatus=<?php echo $id;?>" name="" <?php if($status == 1 || $status == 2){echo "style='pointer-events:none'";}?>><button class="btn btn-block btn-danger mb-2">Cancle</button></a>
+                            </td>
                         </tr>
                         <?php }?>
                     </tbody>
@@ -300,6 +346,12 @@ while ($row = mysqli_fetch_assoc($show)) {
 
     <!-- Page level custom scripts -->
     <script src="public/js/demo/datatables-demo.js"></script>
+
+    <script>
+        $(".alert").delay(5000).slideUp(200, function() {
+    		$(this).alert('close');
+		});
+    </script>
 
 </body>
 
